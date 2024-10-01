@@ -21,4 +21,4 @@ int FactorialZeros(int n)
     return zeros;
 }
 
-int main(){cout << FactorialZeros(1000); return 0;}
+int main(int n){cin >> n; cout << FactorialZeros(n); return 0;}

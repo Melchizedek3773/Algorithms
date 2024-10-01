@@ -6,6 +6,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork", "HomeWork\HomeWo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Power", "Power\Power.vcxproj", "{3B922C3E-2759-4915-8C3E-2D25706EDCCD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factorization", "Factorization\Factorization.vcxproj", "{3A3FA4FF-6112-4465-A677-DCABA5D9E394}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -38,5 +40,13 @@ Global
 		{3B922C3E-2759-4915-8C3E-2D25706EDCCD}.Release|Win32.Build.0 = Release|Win32
 		{3B922C3E-2759-4915-8C3E-2D25706EDCCD}.Release|x64.ActiveCfg = Release|x64
 		{3B922C3E-2759-4915-8C3E-2D25706EDCCD}.Release|x64.Build.0 = Release|x64
+		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Debug|Win32.Build.0 = Debug|Win32
+		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Debug|x64.ActiveCfg = Debug|x64
+		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Debug|x64.Build.0 = Debug|x64
+		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Release|Win32.ActiveCfg = Release|Win32
+		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Release|Win32.Build.0 = Release|Win32
+		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Release|x64.ActiveCfg = Release|x64
+		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal
