@@ -2,11 +2,13 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fibonacci", "Fibonacci\Fibonacci.vcxproj", "{4782778B-1F5D-4B86-B0DC-5686D9BC13BE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork", "HomeWork\HomeWork.vcxproj", "{09B9F220-CFF7-4665-B5D8-3E5BC492A671}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FactorialZeros", "FactorialZeros\FactorialZeros.vcxproj", "{09B9F220-CFF7-4665-B5D8-3E5BC492A671}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Power", "Power\Power.vcxproj", "{3B922C3E-2759-4915-8C3E-2D25706EDCCD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factorization", "Factorization\Factorization.vcxproj", "{3A3FA4FF-6112-4465-A677-DCABA5D9E394}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FactionSum", "FactionSum\FactionSum.vcxproj", "{104B8A37-5686-4CDA-A511-0CACBC88C05E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +50,13 @@ Global
 		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Release|Win32.Build.0 = Release|Win32
 		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Release|x64.ActiveCfg = Release|x64
 		{3A3FA4FF-6112-4465-A677-DCABA5D9E394}.Release|x64.Build.0 = Release|x64
+		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Debug|Win32.Build.0 = Debug|Win32
+		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Debug|x64.ActiveCfg = Debug|x64
+		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Debug|x64.Build.0 = Debug|x64
+		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Release|Win32.ActiveCfg = Release|Win32
+		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Release|Win32.Build.0 = Release|Win32
+		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Release|x64.ActiveCfg = Release|x64
+		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal
