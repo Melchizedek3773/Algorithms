@@ -10,6 +10,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factorization", "Factorizat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FactionSum", "FactionSum\FactionSum.vcxproj", "{104B8A37-5686-4CDA-A511-0CACBC88C05E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReverseArray", "ReverseArray\ReverseArray.vcxproj", "{8758F028-463E-4EAB-88C9-C05D37A62F31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -58,5 +60,13 @@ Global
 		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Release|Win32.Build.0 = Release|Win32
 		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Release|x64.ActiveCfg = Release|x64
 		{104B8A37-5686-4CDA-A511-0CACBC88C05E}.Release|x64.Build.0 = Release|x64
+		{8758F028-463E-4EAB-88C9-C05D37A62F31}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8758F028-463E-4EAB-88C9-C05D37A62F31}.Debug|Win32.Build.0 = Debug|Win32
+		{8758F028-463E-4EAB-88C9-C05D37A62F31}.Debug|x64.ActiveCfg = Debug|x64
+		{8758F028-463E-4EAB-88C9-C05D37A62F31}.Debug|x64.Build.0 = Debug|x64
+		{8758F028-463E-4EAB-88C9-C05D37A62F31}.Release|Win32.ActiveCfg = Release|Win32
+		{8758F028-463E-4EAB-88C9-C05D37A62F31}.Release|Win32.Build.0 = Release|Win32
+		{8758F028-463E-4EAB-88C9-C05D37A62F31}.Release|x64.ActiveCfg = Release|x64
+		{8758F028-463E-4EAB-88C9-C05D37A62F31}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal
