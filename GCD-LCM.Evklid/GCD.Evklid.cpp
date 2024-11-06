@@ -9,11 +9,16 @@ int GCD (int a, int b)
     }
     return a;
 }
+int LCM (int a, int b)
+{
+    // Warning! Overflow.
+    return a*b/GCD (a, b);
+}
 
 int main()
 {
     int a, b;
     std::cin >> a >> b;
-    std::cout << GCD(a, b);
+    std::cout << LCM(a, b);
     return 0;
 }

@@ -16,7 +16,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RequiredAmount", "RequiredA
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Y.TwoOfThree", "Y.TwoOfThree\Y.TwoOfThree.vcxproj", "{9ED15183-4C37-42B1-894A-894BE65C17CD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GCD.Evklid", "GCD.Evklid\GCD.Evklid.vcxproj", "{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GCD-LCM.Evklid", "GCD-LCM.Evklid\GCD-LCM.Evklid.vcxproj", "{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
