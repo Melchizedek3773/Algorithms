@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Actor\\RiderProjects\\Algorithms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09B9F220-CFF7-4665-B5D8-3E5BC492A671}|FactorialZeros\\FactorialZeros.vcxproj|C:\\Users\\Actor\\RiderProjects\\Algorithms\\FactorialZeros\\FactorialZeros.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{09B9F220-CFF7-4665-B5D8-3E5BC492A671}|FactorialZeros\\FactorialZeros.vcxproj|solutionrelative:FactorialZeros\\FactorialZeros.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FactorialZeros.cpp",
+              "DocumentMoniker": "C:\\Users\\Actor\\RiderProjects\\Algorithms\\FactorialZeros\\FactorialZeros.cpp",
+              "RelativeDocumentMoniker": "FactorialZeros\\FactorialZeros.cpp",
+              "ToolTip": "C:\\Users\\Actor\\RiderProjects\\Algorithms\\FactorialZeros\\FactorialZeros.cpp",
+              "RelativeToolTip": "FactorialZeros\\FactorialZeros.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-31T10:25:32.198Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

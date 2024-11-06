@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RequiredAmount", "RequiredA
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Y.TwoOfThree", "Y.TwoOfThree\Y.TwoOfThree.vcxproj", "{9ED15183-4C37-42B1-894A-894BE65C17CD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GCD.Evklid", "GCD.Evklid\GCD.Evklid.vcxproj", "{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -88,5 +90,13 @@ Global
 		{9ED15183-4C37-42B1-894A-894BE65C17CD}.Release|Win32.Build.0 = Release|Win32
 		{9ED15183-4C37-42B1-894A-894BE65C17CD}.Release|x64.ActiveCfg = Release|x64
 		{9ED15183-4C37-42B1-894A-894BE65C17CD}.Release|x64.Build.0 = Release|x64
+		{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}.Debug|Win32.Build.0 = Debug|Win32
+		{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}.Debug|x64.ActiveCfg = Debug|x64
+		{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}.Debug|x64.Build.0 = Debug|x64
+		{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}.Release|Win32.ActiveCfg = Release|Win32
+		{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}.Release|Win32.Build.0 = Release|Win32
+		{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}.Release|x64.ActiveCfg = Release|x64
+		{432CA8CB-DEF5-4C8E-888A-C12128BEA47A}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal
