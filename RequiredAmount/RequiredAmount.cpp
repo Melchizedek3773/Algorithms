@@ -18,6 +18,6 @@ int main()
         for (int j = m - 1; j >= 0; j--)
             if (arr[i] + arr2[j] == k)
                 d++;
-    std::cout << d << '\n';
+    std::cout << d;
     return 0;
 }
