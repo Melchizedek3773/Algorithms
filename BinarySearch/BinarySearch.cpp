@@ -2,7 +2,7 @@
 int BinarySearch(int* p, int n, int k)
 {
     int low = 0;
-    int high = n;
+    int high = n-1;
     while (low < high)
     {
         int mid = (low+high)/2;

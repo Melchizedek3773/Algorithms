@@ -1,13 +1,3 @@
-// 1 2 3 4 5 6 7 8 k = 2
-// l     m       h
-// l m   h
-// m h
-//   l
-
-//  10  20  30  k = 15
-//  l   m   h
-//  m   h
-//      l
 #include <iostream>
 int Lower_Bound(int* p, int n, int k)
 {
@@ -21,7 +11,8 @@ int Lower_Bound(int* p, int n, int k)
         else
             high = mid;
     }
-    return low;
+    int result = (p[low] - k == k - p[low - 1] || p[low] - k > k - p[low-1] && low != 0 && low != n) ? low-1 : low;
+    return result;
 }
 
 int main()
