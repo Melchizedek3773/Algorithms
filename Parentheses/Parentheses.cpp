@@ -3,6 +3,8 @@ int main()
 {
     std::string str;
     std::cin >> str;
-    std::cout << str << '\n';
+    int len = 0;
+    while (len != str.length())
+        std::cout << str.at(len++) << '\n';
     return 0;
 }
