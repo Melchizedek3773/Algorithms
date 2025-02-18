@@ -15,6 +15,7 @@ void AverageOfMultiples(int* p, int n, int k)
             ++l;
         }
     }
+    delete[] p;
     
     int sum = 0;
     for (int i = 1; i < size; i++)
@@ -23,6 +24,7 @@ void AverageOfMultiples(int* p, int n, int k)
     
     for (int i = 0; i < size; i++)
         std::cout << arr[i] << " ";
+    delete[] arr;
 }
 int main()
 {

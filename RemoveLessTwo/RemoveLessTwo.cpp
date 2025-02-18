@@ -20,6 +20,7 @@ void RemoveLessTwo(double* p, int n)
     }
     for (int i = 0; i < l; i++)
         std::cout << t[i] << " ";
+    delete[] t;
 }
 int main()
 {
@@ -30,5 +31,6 @@ int main()
     for (int i = 0; i < n; i++)
         std::cin >> p[i];
     RemoveLessTwo(p, n);
+    delete[] p;
     return 0;
 }

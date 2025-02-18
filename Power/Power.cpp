@@ -14,4 +14,8 @@ double Power(double a, int n)
     }
     return result;
 }
-int main(){cout << Power(8,3); return 0;}
+int main()
+{
+    cout << Power(8,3);
+    return 0;
+}

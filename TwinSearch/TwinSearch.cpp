@@ -11,7 +11,7 @@ int Lower_Bound(int* p, int n, int k)
         else
             high = mid;
     }
-    int result = (p[low] - k == k - p[low - 1] || p[low] - k > k - p[low-1] && low != 0 && low != n) ? low-1 : low;
+    int result = (p[low] - k == k - p[low - 1] || p[low] - k > k - p[low-1] && low != 0 & low != n) ? low-1 : low;
     return result;
 }
 
