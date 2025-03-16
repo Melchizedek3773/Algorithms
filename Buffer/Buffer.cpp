@@ -5,7 +5,7 @@
 
 double Array::at(int index)
 {
-    //assert(index < real_size);
+    //assert(index < real_size && buffer != 0);
     return buffer[index];
 }
 void Array::Grow()
@@ -23,6 +23,6 @@ void Array::push_back(double element)
 {
     if (real_size == buffer_size)
         Grow();
-    //assert(real_size < buffer_size);
+    //assert(real_size < buffer_size && buffer != 0);
     buffer[real_size] = element;
 }
