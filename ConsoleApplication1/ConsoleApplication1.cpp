@@ -1,5 +1,7 @@
+#include <vector>
+#include <iostream>
+#include <assert.h>
 int main()
 {
-    int n = 2+3;
-    return 0;
+    std::cout << 11/2;
 }

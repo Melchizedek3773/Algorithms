@@ -32,6 +32,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FilterAndSquareCount", "Fil
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parentheses", "Parentheses\Parentheses.vcxproj", "{ADFC5181-EB19-440C-A3F5-2E2C583E5090}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Buffer", "Buffer\Buffer.vcxproj", "{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Transformation", "Transformation\Transformation.vcxproj", "{532484F2-2AA7-457E-87C7-626754BECA09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -168,5 +172,21 @@ Global
 		{ADFC5181-EB19-440C-A3F5-2E2C583E5090}.Release|Win32.Build.0 = Release|Win32
 		{ADFC5181-EB19-440C-A3F5-2E2C583E5090}.Release|x64.ActiveCfg = Release|x64
 		{ADFC5181-EB19-440C-A3F5-2E2C583E5090}.Release|x64.Build.0 = Release|x64
+		{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}.Debug|Win32.Build.0 = Debug|Win32
+		{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}.Debug|x64.ActiveCfg = Debug|x64
+		{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}.Debug|x64.Build.0 = Debug|x64
+		{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}.Release|Win32.ActiveCfg = Release|Win32
+		{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}.Release|Win32.Build.0 = Release|Win32
+		{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}.Release|x64.ActiveCfg = Release|x64
+		{0C1560C9-2E7D-4DCA-8EDF-3C3650B79354}.Release|x64.Build.0 = Release|x64
+		{532484F2-2AA7-457E-87C7-626754BECA09}.Debug|Win32.ActiveCfg = Debug|Win32
+		{532484F2-2AA7-457E-87C7-626754BECA09}.Debug|Win32.Build.0 = Debug|Win32
+		{532484F2-2AA7-457E-87C7-626754BECA09}.Debug|x64.ActiveCfg = Debug|x64
+		{532484F2-2AA7-457E-87C7-626754BECA09}.Debug|x64.Build.0 = Debug|x64
+		{532484F2-2AA7-457E-87C7-626754BECA09}.Release|Win32.ActiveCfg = Release|Win32
+		{532484F2-2AA7-457E-87C7-626754BECA09}.Release|Win32.Build.0 = Release|Win32
+		{532484F2-2AA7-457E-87C7-626754BECA09}.Release|x64.ActiveCfg = Release|x64
+		{532484F2-2AA7-457E-87C7-626754BECA09}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal
