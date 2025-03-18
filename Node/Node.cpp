@@ -1,5 +1,4 @@
 #include "Node.h"
-#include <cassert>
 
 Node* Node::search(Node* head, int x)
 {
