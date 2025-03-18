@@ -25,5 +25,5 @@ int main()
     Array* array = new Array[10];
     array[0].push_back(10);
     array[1].push_back(10);
-    std::cout << array[0].at(1);
+    std::cout << array[1].at(1);
 }

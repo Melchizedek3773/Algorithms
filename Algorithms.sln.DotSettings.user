@@ -1,7 +1,12 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=24707D44_002D865E_002D4D61_002DA13B_002DF969DD74F7DB_002Ff_003ANode_002Ecpp/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=24707D44_002D865E_002D4D61_002DA13B_002DF969DD74F7DB_002Ff_003ANode_002Eh/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=532484F2_002D2AA7_002D457E_002D87C7_002D626754BECA09_002Ff_003ATransformation_002Ecpp/@EntryIndexedValue">ExplicitlyExcluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AGanymyc_002Easm_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FLocal_003FTemp_003FSandboxFiles_003FGynovos_003FGanymyc_002Easm/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AJosixyh_002Easm_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FLocal_003FTemp_003FSandboxFiles_003FWopygiz_003FJosixyh_002Easm/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=9E5A818F_002D8036_002D4430_002D9B0C_002D96EB47A7EEB9_002Ff_003AConsoleApplication1_002Ecpp/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AQuvagem_002Easm_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FLocal_003FTemp_003FSandboxFiles_003FWotadyn_003FQuvagem_002Easm/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=9CDE2994_002D3582_002D4B62_002D9206_002D2DBA3791629A_002Ff_003ANodeWithStack_002Ecpp/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=9E5A818F_002D8036_002D4430_002D9B0C_002D96EB47A7EEB9_002Ff_003AConsoleApplication1_002Ecpp/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/AnalysisEnabled/@EntryValue">VISIBLE_FILES</s:String>
 	
 	</wpf:ResourceDictionary>
