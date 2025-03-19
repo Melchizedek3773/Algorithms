@@ -1,9 +1,11 @@
+#include <algorithm>
 #include <cassert>
 #include <iostream>
 struct Node
 {
-    int data = 0;
-    Node* next = nullptr;
+    Node() : data(0), next(nullptr){}
+    int data;
+    Node* next;
 
     explicit Node(int a) : data(a) {}
 };
@@ -35,17 +37,38 @@ public:
     {
         return head == nullptr;
     }
+    void push_even()
+    {
+        int max;
+        Node* current = head;
+        while (current != nullptr)
+        {
+            max = std::max(max, current->data);
+            current = current->next;
+        }
+        
+        Node* first = head;
+        for (int i = 0; head != nullptr; i++)
+        {
+            if (i % 2 == 0) push(max * head->data);
+            head = head->next;
+            ++i;
+        }
+        head = first;
+        current = head;
+        while (current != nullptr) std::cout << current->data << " ";
+    }
 private:
     Node* head = nullptr;
 };
 
 int main()
 {
+    int n;
+    std::cin >> n;
     Stack st;
-    st.push(12);
-    st.push(18);
-    std::cout << st.pop() << '\n';
-    std::cout << st.pop() << '\n';
-    std::cout << st.empty();
+    for (int i = 1; i <= n; i++)
+        st.push(i);
+    st.push_even();
     return 0;
 }
