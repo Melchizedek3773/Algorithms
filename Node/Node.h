@@ -1,7 +1,7 @@
-#include <iostream>
+#include <algorithm>
 #include <cassert>
+#include <iostream>
 
-#include "../Stack/Stack.h"
 struct Node
 {
     Node() : data(0), next(nullptr), prev(nullptr){}
@@ -15,11 +15,56 @@ struct Node
     Node* prev;
 };
 
+/*/*//*/*/
+
+
+void Bilet1()
+{
+    int n, max = 0;
+    std:: cin >> n;
+    Node* head = new Node();
+    for (int i = 1; i <= n; i++)
+        head->insert(head, i);
+    Node* current = head;
+    Node* node_max = head;
+    while (current != nullptr)
+    {
+        if (max < current->data)
+        {
+            max = current->data;
+            node_max = current;
+        }
+        current = current->next;
+    }
+    head = node_max->next;
+    head->prev = nullptr;
+    while (current != nullptr)
+    {
+        current = node_max->next->prev;
+        current->deleteAt(current);
+    }
+    current = head;
+    while (current != nullptr)
+    {
+        if (current->data % 2 == 0)
+        {
+            current->insert(current, current->data * max);
+            std::cout << current->data << " E&m:";
+            current = current->next;
+        }
+        std::cout << current->data << " ";
+        current = current->next;
+        
+        if (current->next == nullptr)
+        {
+            std::cout << " Max:" << current->insert(current, max)->data;
+            current = nullptr;
+        }
+    }
+}
+
 int main()
 {
-    Node* head = new Node();
-    head->data = 10;
-    std::cout << head->search(head, 10) << '\n';
-    
+    Bilet1();
     return 0;
 }

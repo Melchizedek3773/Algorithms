@@ -1,5 +1,4 @@
 #include "Node.h"
-
 Node* Node::search(Node* head, int x)
 {
     Node* current = head;
