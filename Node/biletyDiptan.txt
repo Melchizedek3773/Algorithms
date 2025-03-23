@@ -1,0 +1,70 @@
+void Bilet1()
+{
+    int n, max = 0;
+    std::cin >> n;
+    Node* head = new Node();
+    for (int i = 1; i <= n; i++)
+        head->insert(head, i);
+    Node* current = head;
+    Node* node_max = head;
+    while (current != nullptr)
+    {
+        if (max < current->data)
+        {
+            max = current->data;
+            node_max = current;
+        }
+        current = current->next;
+    }
+    head = node_max->next;
+    head->prev = nullptr;
+    while (current != nullptr)
+    {
+        current = node_max->next->prev;
+        current->deleteAt(current);
+    }
+    current = head;
+    while (current != nullptr)
+    {
+        if (current->data % 2 == 0)
+        {
+            current->insert(current, current->data * max);
+            std::cout << current->data << " E&m:";
+            current = current->next;
+        }
+        std::cout << current->data << " ";
+        current = current->next;
+        
+        if (current->next == nullptr)
+        {
+            std::cout << " Max:" << current->insert(current, max)->data;
+            current = nullptr;
+        }
+    }
+}
+
+void Bilet15()
+{
+    int n = 0;
+    std::cin >> n;
+    
+    Node* head = new Node();
+    head->data = 20;
+    for (int i = 0; i < n; i++)
+        head->insert(head, i);
+    Node* current = head->next;
+    head->next->data = 1;
+    head->next->next->data = 2;
+    while (current != nullptr)
+    {
+        if (current->prev->data < current->data)
+            current->prev->deleteAt(current->prev);
+        current = current->next;
+    }
+    current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+}
