@@ -1,70 +1,44 @@
 #include <algorithm>
 #include <cassert>
 #include <iostream>
-
+#include <vector>
+// -1 -1 3 -4 -2 1 1 1 -2
+// -  -  -  +  + + ++ + -
 struct Node
 {
-    Node() : data(0), next(nullptr), prev(nullptr){}
+    Node() : data(' '), next(nullptr), prev(nullptr){}
     Node* Union(Node* head1, Node* head2);
-    Node* search(Node* head, int x);
-    Node* insert(Node* node, int data);
+    Node* search(Node* head, char x);
+    Node* insert(Node* node, char data);
     void deleteAt(Node* node);
 
-    int data;
+    char data;
     Node* next;
     Node* prev;
 };
 
-/*/*//*/*/
 
-
-void Bilet1()
-{
-    int n, max = 0;
-    std:: cin >> n;
-    Node* head = new Node();
-    for (int i = 1; i <= n; i++)
-        head->insert(head, i);
-    Node* current = head;
-    Node* node_max = head;
-    while (current != nullptr)
-    {
-        if (max < current->data)
-        {
-            max = current->data;
-            node_max = current;
-        }
-        current = current->next;
-    }
-    head = node_max->next;
-    head->prev = nullptr;
-    while (current != nullptr)
-    {
-        current = node_max->next->prev;
-        current->deleteAt(current);
-    }
-    current = head;
-    while (current != nullptr)
-    {
-        if (current->data % 2 == 0)
-        {
-            current->insert(current, current->data * max);
-            std::cout << current->data << " E&m:";
-            current = current->next;
-        }
-        std::cout << current->data << " ";
-        current = current->next;
-        
-        if (current->next == nullptr)
-        {
-            std::cout << " Max:" << current->insert(current, max)->data;
-            current = nullptr;
-        }
-    }
-}
 
 int main()
 {
-    Bilet1();
+    std::string s;
+    std::cin >> s;
+    Node* head = new Node();
+    Node* to_delete = nullptr;
+    size_t n = 0;
+    while (n < s.size())
+    {
+        to_delete = head->search(head, s[n]);
+        if (to_delete == nullptr)
+            head->insert(head, s[n]);
+        else to_delete->deleteAt(to_delete);
+        n++;
+    }
+    Node* current = head->next;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
     return 0;
 }
