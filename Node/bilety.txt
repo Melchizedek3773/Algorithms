@@ -1,0 +1,237 @@
+// На данный момент есть билеты 1, 15, 16, 7, 14, 10.
+// 1.   Если в задаче указан список вещественных чисел, то меняйте int data на double data в Node.h и сpp везде где data 
+// Где-то ввод значений списка сделал автоматом, можете сделать массив интов/даблов (int* k = new int[n]) 
+// for... std::cin >> k[i]
+// и затем добавить каждое значение массива в список head->inseart(head, k[i])
+// А ещё у меня нету вывода начальной последовательности. current->data и current = current->next в помощь.
+
+void bilet1()
+{
+    int n, max = 0;
+    std::cin >> n;
+    Node* head = new Node();
+    for (int i = 1; i <= n; i++)
+        head->insert(head, i);
+    Node* current = head;
+    Node* node_max = head;
+    while (current != nullptr)
+    {
+        if (max < current->data)
+        {
+            max = current->data;
+            node_max = current;
+        }
+        current = current->next;
+    }
+    head = node_max->next;
+    head->prev = nullptr;
+    while (current != nullptr)
+    {
+        current = node_max->next->prev;
+        current->deleteAt(current);
+    }
+    current = head;
+    while (current != nullptr)
+    {
+        if (current->data % 2 == 0)
+        {
+            current->insert(current, current->data * max);
+            std::cout << current->data << " E&m:";
+            current = current->next;
+        }
+        std::cout << current->data << " ";
+        current = current->next;
+        
+        if (current->next == nullptr)
+        {
+            std::cout << " Max:" << current->insert(current, max)->data;
+            current = nullptr;
+        }
+    }
+}
+
+void bilet15()
+{
+    int n = 0;
+    std::cin >> n;
+    
+    Node* head = new Node();
+    head->data = 20;
+    for (int i = n; i > n; i--)
+        head->insert(head, i);
+    Node* current = head->next;
+    while (current != nullptr)
+    {
+        if (current->prev->data < current->data)
+            current->prev->deleteAt(current->prev);
+        current = current->next;
+    }
+    current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+}
+
+void bilet16()
+{
+    int n = 50, k, steps = 0, count = 0;
+    std::cin >> k;
+    Node* head = new Node();
+    for (int i = 1; i <= n; i++)
+        head->insert(head, i);
+    Node* current = head->next;
+    while (current != nullptr)
+    {
+        if (current->prev->data % k == 0 && current->prev->data != 0)
+        {
+            count += current->prev->data;
+            current->prev->deleteAt(current->prev);
+            steps++;
+        }
+        current = current->next;
+    }
+    std::cout << "Count: " << count << " Steps: " << steps << " | ";
+    head->data = count / steps;
+    current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+}
+
+void bilet7()
+{
+    int n = 0, k = 0;
+    std::cin >> n;
+    int* b = new int[n];
+    for (int i = 0; i < n; i++)
+        std::cin >> b[i];
+    Node* node = new Node();
+    node->data = -1;
+    Node* head = node->insert(node, b[0]);
+    for (int i = n-1; i > 0; i--)
+        head->insert(head, b[i]);
+    Node* current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+    std::cout << '\n';
+    current = head;
+    Node* to_delete = nullptr;
+    while (current != nullptr)
+    {
+        if (current->prev != nullptr && current->prev->data > 0)
+        {
+            current->prev->deleteAt(current->prev);
+            k++;
+        }
+        if (current->next != nullptr && current->next->data > 0)
+            k++;
+        if (current->next == nullptr && current->data > 0)
+        {
+            to_delete = current;
+        }
+        current = current->next;
+    }
+    if (to_delete != nullptr)
+        to_delete->deleteAt(to_delete);
+    head = node->next;
+    current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+    std::cout << "Neiborhoods count: " << k;
+}
+
+void bilet14()
+{
+    int n = 0;
+    std::cin >> n;
+    int* b = new int[n];
+    for (int i = 0; i < n; i++)
+        std::cin >> b[i];
+    Node* node = new Node();
+    node->data = -1;
+    Node* head = node->insert(node, b[0]);
+    for (int i = n-1; i > 0; i--)
+        head->insert(head, b[i]);
+    Node* current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+    std::cout << '\n';
+    current = head->next;
+    Node* to_delete = nullptr;
+    while (current != nullptr)
+    {
+        if (current->prev != nullptr && current->prev->data < 2)
+        {
+            current->prev->deleteAt(current->prev);
+        }
+        if (current->next == nullptr && current->data < 2)
+        {
+            to_delete = current;
+        }
+        current = current->next;
+    }
+    if (to_delete != nullptr)
+        to_delete->deleteAt(to_delete);
+    head = node->next;
+    current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+}
+
+void bilet10()
+{
+    int n = 0;
+    std::cin >> n;
+    int* b = new int[n];
+    for (int i = 0; i < n; i++)
+        std::cin >> b[i];
+    Node* head = new Node();
+    head->data = b[0];
+    for (int i = n-1; i > 0; i--)
+        head->insert(head, b[i]);
+    Node* current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+    std::cout << '\n';
+    int k = 1;
+    std::vector<Node*> temp;
+    current = head;
+    while (current != nullptr)
+    {
+        if (k % 2 != 0)
+        {
+            temp.push_back(current);
+        }
+        k++;
+        current = current->next;
+    }
+    current = temp[0];
+    for (int i = 0; i < k/2; i++)
+        if (temp[i] != nullptr)
+            temp[i]->insert(temp[i], temp[i]->data*2);
+    current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+}
