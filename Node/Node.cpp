@@ -1,5 +1,5 @@
 #include "Node.h"
-Node* Node::search(Node* head, int x)
+Node* Node::search(Node* head, char x)
 {
     Node* current = head;
     while (current != nullptr)
@@ -9,8 +9,8 @@ Node* Node::search(Node* head, int x)
         current = current->next;
     }
     return nullptr;
-}
-Node* Node::insert(Node* node, int a)
+} 
+Node* Node::insert(Node* node, char a)
 {
     assert(node != nullptr);
     Node* new_node = new Node();
@@ -30,9 +30,9 @@ void Node::deleteAt(Node* node)
     assert(node != nullptr);
 
     if (node->next != nullptr)
-        node->prev->next = node->next;
-    if (node->prev != nullptr)
         node->next->prev = node->prev;
+    if (node->prev != nullptr)
+        node->prev->next = node->next;
     delete node;
 }
 Node* Node::Union(Node* head1, Node* head2)
